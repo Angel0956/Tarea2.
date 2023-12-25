@@ -1,0 +1,87 @@
+body{
+    background-color: #e0eeef;
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 0H0v36h36V0zM15.126 2H2v13.126c.367.094.714.24 1.032.428L15.554 3.032c-.188-.318-.334-.665-.428-1.032zM18 4.874V18H4.874c-.094-.367-.24-.714-.428-1.032L16.968 4.446c.318.188.665.334 1.032.428zM22.874 2h11.712L20 16.586V4.874c1.406-.362 2.512-1.468 2.874-2.874zm10.252 18H20v13.126c.367.094.714.24 1.032.428l12.522-12.522c-.188-.318-.334-.665-.428-1.032zM36 22.874V36H22.874c-.094-.367-.24-.714-.428-1.032l12.522-12.522c.318.188.665.334 1.032.428zm0-7.748V3.414L21.414 18h11.712c.362-1.406 1.468-2.512 2.874-2.874zm-18 18V21.414L3.414 36h11.712c.362-1.406 1.468-2.512 2.874-2.874zM4.874 20h11.712L2 34.586V22.874c1.406-.362 2.512-1.468 2.874-2.874z' fill='%2379e0dd' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Reset de estilos para mayor consistencia en diferentes navegadores */
+html {
+    font-size: 62.5%; /* Establece 1rem a 10px */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6rem; /* Equivale a 16px */
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* Márgenes laterales */
+    max-width: 960px; /* Ancho máximo del contenido */
+}
+
+/* Estructura de la cuadrícula */
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    padding: 0 10px; /* Espacio entre columnas */
+}
+
+/* Clases para columnas responsivas */
+/* Ejemplo: para dispositivos grandes (mayor a 750px) */
+@media (min-width: 750px) {
+    .one-third.column { width: 33.33%; }
+    .two-thirds.column { width: 66.66%; }
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-primary {
+    color: #fff;
+    background-color: #0074D9;
+    border: 1px solid #0074D9;
+}
+
+.button-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Inputs y elementos de formulario */
+input[type="text"],
+input[type="number"],
+button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Otros estilos de formulario según tus necesidades */
+
+/* Ajusta y extiende estos estilos según tu diseño y requisitos específicos. */
